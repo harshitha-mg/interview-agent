@@ -214,22 +214,14 @@ These lines are already present; on first run, they will download required data.
 
 5. Run the Backend
 
-    uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    python main.py
 
     You should see:
         Uvicorn running on http://0.0.0.0:8000
 
-6. Serve the Frontend
-    In another terminal (still in the project directory):
-        # Simple static server
-        python -m http.server 3000  
+6. Using the App
 
-    Now open in browser:
-        http://localhost:3000/interview_agent.html
-
-7. Using the App
-
-    Open http://localhost:3000/interview_agent.html
+    Open (http://0.0.0.0:8000)
     Choose a category (e.g., “Technical Interview”)
     Answer each of the 8 questions:
     Type your answer, or
